@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageQuest</title>
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="gradient-text">ImageQuest</h1>
+        <div class="auth-links">
+            <!-- This section has been removed as it references non-existent routes -->
+        </div>
+        <div class="upload-box">
+            <p>Search Image by AI</p>
+            <div class="box">
+                <div class="drag-area" id="drag-area">
+                    <div class="icon">
+                        <img src="../static/asset/dragIcon.png" alt="Upload Icon">
+                    </div>
+                    <p>Drag an image here</p>
+                </div>
+                <div class="or-divider">OR</div>
+                <a href="#" id="upload-link">Upload Image</a>
+                <input type="file" id="fileInput" hidden>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="loading-screen" style="display: none;">
+        <h1 class="gradient-text">ImageQuest</h1>
+        <img src="static/asset/loadingIndicator.gif" alt="Loading">
+    </div>
+
+    <div id="formatAlert" class="modal">
+        <div class="modal-content">
+            <p>Not supported image format!</p>
+            <button id="closeModal-1">OK</button>
+        </div>
+    </div>
+
+    <div id="noResultAlert" class="modal">
+        <div class="modal-content">
+            <p>No similar image detected!</p>
+            <button id="closeModal-2">OK</button>
+        </div>
+    </div>
+    
+    <script src="../static/js/home.js"></script>
+</body>
+</html>

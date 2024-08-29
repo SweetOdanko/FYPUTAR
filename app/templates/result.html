@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageQuest</title>
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/result.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="gradient-text">ImageQuest</h1>
+        <div class="results">
+            <div class="image-box1">
+                <p>Your Input Image:</p>
+                <img id="inputImage" src="{{ image }}" alt="Your Image" style="max-width: 100%;">
+            </div>
+            <div class="image-box2">
+                <p>Similar Images:</p>
+                <div class="similar-images" id="similarImages"></div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="/" class="back-button">Back</a>
+    </div>
+
+    <div id="download" class="modal">
+        <div class="modal-content">
+            <div class="close" id="closeModalButton">
+                <img src="../static/asset/closeIcon.png" alt="Close Icon">
+            </div>
+            <div class="image-container">
+                <img id="modalImage" src="" alt="Large View" style="width: 100%;">
+            </div>
+            <div class="icon">
+                <a id="downloadButton" href="#" download>
+                    <img src="../static/asset/downloadIcon.png" alt="Download Icon">
+                    <div>Download</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="customAlert" class="modal-1">
+        <div class="modal-content-1">
+            <p>The image had downloaded successful!</p>
+            <button id="closeAlertButton">OK</button>
+        </div>
+    </div>
+
+    <script src="../static/js/result.js"></script>
+</body>
+</html>
